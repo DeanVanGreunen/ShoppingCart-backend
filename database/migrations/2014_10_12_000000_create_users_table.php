@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->string('api_key');
+            $table->string('api_key')->nullable();
         });
     }
 
